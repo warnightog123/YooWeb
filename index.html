@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YooWeb</title>
+    <style>
+        /* General styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e0f7fa;
+            /* Light blue background */
+            text-align: center;
+        }
+
+        header {
+            background-color: #0e2e51;
+            /* Blue background */
+            color: #fff;
+            padding: 20px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2rem;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        /* Navigation menu */
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 20px 0;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #007bff;
+            padding: 10px 20px;
+            display: inline-block;
+            background-color: #fff;
+            border-radius: 5px;
+            border: 2px solid #007bff;
+            margin: 5px;
+        }
+
+        nav ul li a:hover {
+            background-color: #24b6b9;
+            color: #fff;
+        }
+
+        /* Product listing styles */
+        nav ul li {
+            background-color: #fff;
+            border: 1px solid #14adbb;
+            /* Blue border */
+            border-radius: 8px;
+            margin: 20px;
+            padding: 15px;
+            display: inline-block;
+            width: 250px;
+        }
+
+        nav h2 {
+            color: #133962;
+            /* Blue text for product titles */
+        }
+
+        nav img {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+
+        nav p {
+            font-size: 1.2rem;
+            color: #333;
+            margin: 10px 0;
+        }
+
+        /* Button styles */
+        button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 1rem;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #3c7ec4;
+            /* Darker blue on hover */
+        }
+
+        /* Footer styles */
+        footer {
+            background-color: #112b46;
+            /* Blue footer */
+            color: #fff;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>YooWeb</h1>
+        <hr>
+        <h1>Created By Hassan</h1>
+        <!-- Button to trigger music -->
+        <button onclick="playMusic()">Play Music</button>
+
+        <!-- Audio element for background music -->
+        <audio id="backgroundMusic" loop>
+            <source src="song.mp4" target="audio/mp4">
+            Your browser does not support the audio element.
+        </audio>
+
+        <script>
+            function playMusic() {
+                const audio = document.getElementById('backgroundMusic');
+                audio.play().then(() => {
+                    console.log("Music is playing!");
+                }).catch((error) => {
+                    console.log("Playback failed:", error);
+                });
+            }
+        </script>
+
+    </header>
+
+    <div>
+        <nav>
+            <ul>
+                <li>
+                    <a href="/about.html" target="_blank">About Us</a>
+                    <a href="/contact.html" target="_blank">Contact Us</a>
+                    <a href="/morethings.html">More Things</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <main>
+        <nav>
+            <div>
+                <ul>
+                    <li>
+                        <h2>Low Version</h2>
+                        <img src="Low.JPG" alt="Product Image" />
+                        <p>Price: $29.99</p>
+                        <a href="https://docs.google.com/forms/d/1i7Dulaw16xQFl5XjS1YDqVfkInQXQz4AvoUVabZwZkw"
+                            target="_blank" class="button">Purchase</a>
+
+                    </li>
+                    <hr>
+                    <li>
+                        <h2>Medium Version</h2>
+                        <img src="medium.JPG" alt="Product Image" />
+                        <p>Price: $35.71</p>
+                        <a href="https://docs.google.com/forms/d/1xEw4isH-_uXUxLWDVz5FrsNpm-UnPAtfUg0lNOA77zc"
+                            target="_blank" class="button">Purchase</a>
+                    </li>
+                    <hr>
+                    <li>
+                        <h2>Ultra Version</h2>
+                        <img src="Ultra.JPG" alt="Product Image" />
+                        <p>Price: $45.99</p>
+                        <a href="https://docs.google.com/forms/d/12S1tR1ZJX9_j0eQhbuaCbhId-Gh2Daxb2HoY0coAGDU"
+                            target="_blank" class="button">Purchase</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div>
+            <h2>
+               ---Also set your things on My site by clicking on <a href="/morethings.html">More Things</a>---
+            </h2>
+        </div>
+    </main>
+
+    <footer>
+        "All rights are reserved"
+    </footer>
+
+</body>
+
+</html>

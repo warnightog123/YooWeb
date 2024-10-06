@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More about our things</title>
+    <style>
+        /* General styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5; /* Light gray background */
+    color: #333; /* Dark text color for contrast */
+    text-align: center;
+}
+
+/* Header styles */
+header {
+    background-color: #791d3b; /* Blue background for header */
+    color: #fff; /* White text color */
+    padding: 40px 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem; /* Larger font size for main title */
+}
+
+header h2 {
+    margin: 10px 0;
+    font-size: 1.5rem; /* Smaller font size for subtitle */
+}
+
+hr {
+    width: 80%;
+    margin: 10px auto;
+    border: 1px solid #fff; /* White horizontal line */
+}
+
+header p {
+    font-size: 1rem; /* Font size for paragraph */
+}
+
+/* Navigation styles */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0;
+    display: flex;
+    justify-content: center; /* Center navigation links */
+}
+
+nav ul li {
+    margin: 0 15px; /* Space between links */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #007bff; /* Blue text color for links */
+    padding: 10px 15px;
+    border: 2px solid transparent; /* Transparent border for effect */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s, border-color 0.3s; /* Smooth transition */
+}
+
+nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Light background on hover */
+    border-color: #fff; /* White border on hover */
+}
+
+/* Main content styles */
+main {
+    padding: 40px 20px;
+}
+
+main nav {
+    display: flex;
+    justify-content: center; /* Center product items */
+}
+
+main ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex; /* Display product items in a row */
+    flex-wrap: wrap; /* Allow wrapping to next line */
+    justify-content: center; /* Center items */
+}
+
+main ul li {
+    background-color: #fff; /* White background for product items */
+    border: 1px solid #007bff; /* Blue border */
+    border-radius: 10px; /* Rounded corners */
+    margin: 20px;
+    padding: 20px;
+    width: 300px; /* Fixed width for product items */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+    transition: transform 0.3s; /* Smooth hover effect */
+}
+
+main ul li:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+}
+
+main ul li h2 {
+    color: #007bff; /* Blue color for product titles */
+    margin-bottom: 10px;
+}
+
+main ul li img {
+    max-width: 100%; /* Responsive image */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 5px; /* Rounded corners for images */
+}
+
+main ul li p {
+    font-size: 1.2rem; /* Font size for price */
+    margin: 10px 0; /* Margin for spacing */
+}
+
+/* Button styles */
+.button {
+    text-decoration: none;
+    color: #fff; /* White text */
+    background-color: #007bff; /* Blue background */
+    padding: 12px 20px; /* Padding for buttons */
+    border-radius: 5px; /* Rounded corners */
+    display: inline-block; /* Keep button inline */
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transitions */
+}
+
+.button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    transform: scale(1.05); /* Slight scaling on hover */
+}
+
+/* Footer styles */
+footer {
+    background-color: #6f1850; /* Blue background */
+    color: #fff; /* White text */
+    padding: 20px; /* Padding for footer */
+    position: fixed; /* Fixed position at the bottom */
+    width: 100%; /* Full width */
+    bottom: 0; /* Align to bottom */
+    text-align: center; /* Center text */
+    font-size: 1rem; /* Font size for footer text */
+}
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>
+            More Things
+        </h1>
+        <hr>
+        <h2>
+            Purchase from here
+        </h2>
+        <div>
+            <p>
+                You can also place your item <a
+                    href="https://mail.google.com/mail/u/0/#search/warnightog%40gmail.com?compose=new">here</a>(Email
+                Us)
+            </p>
+        </div>
+        <div>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="/index.html" target="_blank">Home</a>
+                        <a href="/contact.html" target="_blank">Contact Us</a>
+                        <a href="/about.html" targte="_blank">About Us</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div>
+            <nav>
+                <ul>
+                    <li>
+                        <h2>Product</h2>
+                        <img src="Ultra.JPG" alt="Product Image" width="134">
+                        <p>Price $$$$</p>
+                        <a href="" target="_blank" class="button">Purchase</a>
+                    </li>
+                    <li>
+                        <h2>Medium Version</h2>
+                        <img src="medium.JPG" alt="Product Image" width="125" />
+                        <p>Price: $35.71</p>
+                        <a href="" target="_blank" class="button">Purchase</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </main>
+    <footer>
+       "all rights are reserved"
+    </footer>
+</body>
+
+</html>
